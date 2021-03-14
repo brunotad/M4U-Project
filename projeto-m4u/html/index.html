@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "../css/style.css">
+  <link rel="stylesheet" href= "../css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <!--  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+  
+
+  <title>Document</title>
+</head>
+<body>
+    <div class="header-nav">
+     <nav class="sidenav-trigger" >
+      <div class="nav-wrapper">
+        <div class="container-nav">
+          <img src="../svg/logo.svg" id ="logo" class="brand-logo"></img>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img src="../svg/menu-responsive.svg" id ="menu-responsive" alt"menu-hamburguer"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a   href="sass.html">RECARGA</a></li>
+            <li><a   href="badges.html">E-CHIP</a></li>
+            <li><a   href="collapsible.html">QUEM SOMOS</a></li>
+            <li><a   href="mobile.html">EQUIPE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>  
+  
+     <ul class="sidenav right" id="mobile-demo">
+      <li><a   class="sidenav-trigger" href="sass.html">RECARGA</a></li>
+      <li><a   class="sidenav-trigger" href="badges.html">E-CHIP</a></li>
+      <li><a  class="sidenav-trigger"  href="collapsible.html">QUEM SOMOS</a></li>
+      <li><a  class="sidenav-trigger"  href="mobile.html">EQUIPE</a></li>
+    </ul>
+
+
+  <main>
+    <section class ="secao_corpo_principal">
+      <div class=corpo__principal>
+        <div class=container_principal>
+          <label class="items_label" id="recarga1">R$ 25,00</label>
+          <label class="items_label">Telefone</label>
+          <label class="items_label">Cartão</label>
+          <label class="items_label">Validade</label>
+          <button id ="button_final_compra">FINALIZAR RECARGA</button>
+        </div> 
+      </div> 
+      <img id= "img_corpo__principal" src="../svg/ilustraPrancheta.svg">
+    </section> 
+    <!-- <div class = "teste">
+      <img id= "img_corpo__principal" src="../svg/ilustraPrancheta.svg"> 
+    </div> -->
+  </main>
+  <footer> 
+
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems,Option);
+    console.log("oi");
+  });
+
+       
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
